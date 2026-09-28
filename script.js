@@ -163,6 +163,7 @@ class Carrito {
         alert("Compra Realizada con Exito");
         //  Vaciamos el carrito en la memoria y actualizamos la pantalla a cero
         this.items = [];
+        localStorage.removeItem('carrito_maquinaria_equipo'); 
         this.actualizarInterfaz();
     }
 }
