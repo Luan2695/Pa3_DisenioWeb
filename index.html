@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiendas Maquimark</title>
+    <!-- Metadatos para mejorar la busqueda -->
+    <meta name="description" content="Venta y alquiler de maquinaria pesada, camiones volquetes, mezcladoras de concreto y martillos demoledores en Huancayo, Chupaca, Jauja y Concepción.">
+    <meta name="keywords" content="maquinaria pesada junin, alquiler de retroexcavadora huancayo, camiones volquetes chupaca, mezcladoras apata, cotizar maquinaria">
+    <meta name="author" content="Angel Bello Merlo">
+    <!-- Imagen miniatura que saldrá al compartir -->
+    <meta property="og:title" content="Alquiler de Maquinaria y Equipos en Junín">
+    <meta property="og:description" content="Solicita tu cotización en línea para retroexcavadoras, volquetes y equipos de construcción.">
+    <meta property="og:image" content="img/retro.webp"> <!-- Imagen miniatura que saldrá al compartir -->
+    <meta property="og:type" content="website">
+    <!-- Favicon -->
+    <link rel="icon" type="image/sgv+xml" href="img/faviconn.svg" sizes="32x32">
+    <!-- cargar archivo CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header id="inicio">
+        <div class="container">
+            <!-- Imagen SVG del logo de la empresa -->
+            <img src="img/iconomaquimark.svg" alt="Logo MaquiMark - Alquiler de Maquinaria" width="300">
+            <!-- Barra de navegacon -->
+            <nav>
+                <a href="#SomosMaquimark">Quienes Somos</a>
+                <a href="#NuestrosProductos">Nuestros Productos</a>
+                <a href="#Encuentranos">Ubicanos</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+    <!-- Presentacion del catalogo de productos -->
+        <section id="hero">
+            <h1>Maquinaria y Equipos de la <br> mas alta calidad</h1>
+            <form action="#NuestrosProductos">
+                <button>CATALOGO</button>
+            </form>
+        </section>
+        <!-- Descripcion de la empresa -->
+        <section id="SomosMaquimark">
+            <div class="container">
+                <div class="img-container"></div>
+                <h2>Somos <span class="color-acento">MaquiMark</span></h2>
+                <p>Somos tu socio estratégico en el alquiler y provisión de maquinaria pesada para la construcción. Garantizamos equipos de alto rendimiento y asesoramiento experto para llevar tus proyectos al siguiente nivel con total seguridad.</p>
+            </div>
+        <!-- Maquinarias y equipos -->    
+        </section>
+        <section id="NuestrosProductos">
+            <div class="container">
+                <h2>Nuestros Productos</h2>
+                <section class="seccion-filtros">
+                    <div class="grupo-filtro">
+                        <input type="text" id="buscador" placeholder="🔍 Buscar maquinaria o equipo...">
+                    </div>
+                    <div class="grupo-filtro checkboxes">
+                        <label>Filtrar por tipo:</label>
+                        <label><input type="checkbox" id="chk-maquinaria" checked> Maquinaria</label>
+                        <label><input type="checkbox" id="chk-equipo" checked> Equipo</label>
+                    </div>
+                </section>
+                <section>
+                    <div id="contenedor-productos" class="cuadrícula-productos">  
+                        <!-- Tarjetas de las Maquinarias -->
+                        <!-- y los Equipos mediante JS -->
+                    </div>
+                </section>
+            </div>     
+        </section>
+        <!-- Seccion de ubicacion de tiendas -->
+        <section id="Encuentranos">
+            <div class="container">
+                <h2>Ubicanos en: </h2>
+                <div class="container-direccion">  
+                    <!-- Direcciones y telefonos de las tiendas por provincia -->             
+                    <section id="huancayo" class="tarjeta-tienda">
+                        <h3>Huancayo</h3>
+                        <ul>
+                            <li><strong>Direccion:</strong> Jr. Leguia N° 123 -  Chilca</li>
+                            <li><strong>Telefono:</strong> 965123456</li>
+                        </ul>
+                    </section>
+                        <section id="chupaca" class="tarjeta-tienda">
+                            <h3>Chupaca</h3>
+                            <ul>
+                                <li><strong>Direccion:</strong> Av. Mariscal Caceres N° 123 -  Ahuac</li>
+                                <li><strong>Telefono:</strong> 939084523</li>
+                            </ul>
+                        </section>
+                    <section id="concepcion" class="tarjeta-tienda">
+                        <h3>Concepcion</h3>
+                        <ul>
+                            <li><strong>Direccion:</strong> Jr. Las Palmeras N° 256 -  Concepcion</li>
+                            <li><strong>Telefono:</strong> 913110256</li>
+                        </ul>
+                    </section>
+                    <section id="jauja" class="tarjeta-tienda">
+                        <h3>Jauja</h3>
+                        <ul>
+                            <li><strong>Direccion:</strong> Jr. Amauta N° 1562 -  Apata</li>
+                            <li> <strong>Telefono:</strong>   981678523</li>
+                        </ul>                
+                    </section>
+                    <section id="satipo" class="tarjeta-tienda">
+                        <h3>Satipo</h3>
+                        <ul>
+                            <li><strong>Direccion:</strong> Jr. Los Incas N° 1236 -  Satipo</li>
+                            <li> <strong>Telefono:</strong>   925639874</li>
+                        </ul>                
+                    </section>
+                </div>
+            </div>
+        </section>
+        <!-- Pie de pagina: Copyright -->
+        <footer>
+            <div class="container">
+                <p>&copy; 2026 MaquiMark. Todos los derechos reservados.</p>
+                <p>ANGEL BELLO MERLO</p>
+                <p>60319275@CONTINENTAL.EDU.PE</p>
+                <nav>
+                    <a href="#inicio">Inicio</a>
+                </nav>
+            </div>
+        </footer>
+    </main>
+    <!-- Botón del carrito de compras flotante -->
+    <button id="btn-carrito" class="carrito-flotante">
+        <span class="icono-carrito">🛒</span>
+        <span id="contador-carrito" class="contador">0</span>
+    </button>
+
+    <!-- Panel lateral del carrito de compras -->
+    <div id="panel-carrito" class="panel-carrito">
+        <div class="cabecera-panel">
+            <h3>Tu Carrito</h3>
+            <button id="btn-cerrar" class="btn-cerrar">&times;</button>
+        </div>
+        <div id="lista-carrito" class="contenido-panel">
+            <p id="carrito-vacio">El carrito está vacío.</p>
+        </div>
+        
+        <!-- Mostrar el costo total acumulado -->
+        <div class="pie-panel">
+            <div class="contenedor-total">
+                <span>Total Estimado:</span>
+                <span id="total-carrito">S/. 0.00</span>
+            </div>
+            <button class="btn-pagar" onclick='miCarrito.procesarCotizacionAlerta()'>Comprar</button>
+        </div>
+    </div>
+    <!-- Enlazar el archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
